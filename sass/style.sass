@@ -1,0 +1,89 @@
+*
+	margin: 0
+	padding: 0
+
+.slider_container
+	width: 100%
+	height: 700px
+	position: relative
+	margin: 0 auto
+
+	&>div
+		width: 100%
+		height: 100%
+
+	.slider_main
+		overflow: hidden
+
+	.slider_film
+		position: relative
+		display: flex
+		transition: right 0.7s cubic-bezier(0, 1.37, 1, 0.86)
+		// right: 200px
+
+		&>div
+			height: 700px
+			background-size: cover
+			background-position: center
+
+	.slider_trigger
+		position: absolute
+		left: 0
+		top: 0
+		display: flex
+		justify-content: space-between
+		font-size: 50px
+
+		&>div
+			height: 100%
+			width: 100px
+			display: flex
+			justify-content: center
+			align-items: center
+			font-size: 50px
+			font-weight: bold
+			color: white
+			background-color: rgba(41, 115, 158, 0.2)
+			cursor: pointer
+			opacity: 0.3
+			transition: opacity 0.3s ease
+
+			&:hover
+				opacity: 1
+
+	.circles
+		position: absolute
+		bottom: 10px
+		left: 3%
+		display: flex
+
+		& ul
+			position: relative
+			list-style: none
+			height: 50px
+			width: 30px
+			margin: 10px
+			background-color: white
+			display: flex
+			justify-content: center
+			align-items: center
+			cursor: pointer
+			font-size: 30px
+			text-align: center
+
+			&:hover
+				background-color: #641185
+
+		& .divNumber
+			position: absolute
+			top: 20%
+			left: 30%
+			font-size: 30px
+
+		& .divO
+			position: relative
+			list-style: none
+			height: 50px
+			margin: 10px
+			border-radius: 35%
+			background-color: brown
